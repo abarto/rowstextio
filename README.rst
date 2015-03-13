@@ -24,8 +24,8 @@ The following session shows the typical use case for the package.
 
     >>>> import psycopg2
     >>>> import mysql.connector
-    >>>> source_connection = mysql.connector.connect(**settings.XAPOUSERS_CONNECTION_SETTINGS)
-    >>>> target_connection = psycopg2.connect(**settings.WAREHOUSE_CONNECTION_SETTINGS)
+    >>>> source_connection = mysql.connector.connect(**source_connection_settings)
+    >>>> target_connection = psycopg2.connect(**target_connection_settings)
     >>>> from rowstextio import RowsTextIO
     >>>> source_cursor = source_connection.cursor()
     >>>> target_cursor = target_connection.cursor()
